@@ -5,12 +5,504 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title>trillo &mdash; Your all-in-one booking app</title>
     </head>
     <body>
-        
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="trillo logo" class="logo">
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search hotels">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="./img/symbol-defs.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                    <div class="search__recomendations">
+                        <div class="search__recomendation">
+                            <div class="search__recomendation-img">
+                                <img src="./img/hotel-4.jpg" alt="Hotel 4" class="search__recomendation-img--hotels">
+                            </div>
+                            <div class="search__recomendation-description">
+                                <h3>Cocos Resort</h3>
+                                <p>Brisas,Costa Rica</p>
+                            </div>
+                            <div class="search__recomendation-stars">
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </div>
+                            <p class="search__recomendation-punctuation">
+                                4.8
+                            </p>
+                        </div>
+                        <div class="search__recomendation">
+                            <div class="search__recomendation-img">
+                                <img src="./img/hotel-5.jpg" alt="Hotel 5" class="search__recomendation-img--hotels">
+                            </div>
+                            <div class="search__recomendation-description">
+                                <h3>Salinda Resort</h3>
+                                <p>Phu, Quoc Island, Vietnam</p>
+                            </div>
+                            <div class="search__recomendation-stars">
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </div>
+                            <p class="search__recomendation-punctuation">
+                                4.5
+                            </p>
+                        </div>
+                        <div class="search__recomendation">
+                            <div class="search__recomendation-img">
+                                <img src="./img/hotel-6.jpg" alt="Hotel 6" class="search__recomendation-img--hotels">
+                            </div>
+                            <div class="search__recomendation-description">
+                                <h3>White Swan Hotel</h3>
+                                <p>Guargzhou, China</p>
+                            </div>
+                            <div class="search__recomendation-stars">
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                                </svg>
+                            </div>
+                            <p class="search__recomendation-punctuation">
+                                4.0
+                            </p>
+                        </div>
+                    </div>
+                </form>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box user-nav__icon-box--notification">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="./img/symbol-defs.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav__notification">7</span>
+                        <div class="user-nav__notifications">
+                            <h2 class="user-nav__messages-title">Bookmarks</h2>
+                            <div class="user-nav__message user-nav__message-current">
+                                <div class="user-nav__message-photo">
+                                    <img src="./img/user-3.jpg" alt="Photo 3" class="user-nav__message-photo--img">
+                                </div>
+                                <div class="user-nav__message-chat">
+                                    <p class="user-nav__message-chat--name">
+                                        Mike Waltz
+                                    </p>
+                                    <p class="user-nav__message-chat--message">
+                                        Lorem ipsum dolor sit ...
+                                    </p>
+                                </div>
+                                <div class="user-nav__message-date">
+                                    <p class="user-nav__message-date--hour">
+                                        12:15 p.m
+                                    </p>
+                                    <p class="user-nav__message-date--times">
+                                        Oct 8, 2022
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="user-nav__message">
+                                <div class="user-nav__message-photo">
+                                    <img src="./img/user-2.jpg" alt="Photo 2" class="user-nav__message-photo--img">
+                                </div>
+                                <div class="user-nav__message-chat">
+                                    <p class="user-nav__message-chat--name">
+                                        Jessica Natou
+                                    </p>
+                                    <p class="user-nav__message-chat--message">
+                                        Lorem ipsum dolor sit ...
+                                    </p>
+                                </div>
+                                <div class="user-nav__message-date">
+                                    <p class="user-nav__message-date--hour">
+                                        5:53 p.m
+                                    </p>
+                                    <p class="user-nav__message-date--times">
+                                        Oct 1, 2022
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="user-nav__message">
+                                <div class="user-nav__message-photo">
+                                    <img src="./img/user-4.jpg" alt="Photo 4" class="user-nav__message-photo--img">
+                                </div>
+                                <div class="user-nav__message-chat">
+                                    <p class="user-nav__message-chat--name">
+                                        John Briefcase
+                                    </p>
+                                    <p class="user-nav__message-chat--message">
+                                        Lorem ipsum dolor sit ...
+                                    </p>
+                                </div>
+                                <div class="user-nav__message-date">
+                                    <p class="user-nav__message-date--hour">
+                                        2:36 p.m
+                                    </p>
+                                    <p class="user-nav__message-date--times">
+                                        Sept 14, 2022
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-nav__icon-box user-nav__icon-box--message">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="./img/symbol-defs.svg#icon-bubbles2"></use>
+                        </svg>
+                        <span class="user-nav__notification">13</span>
+                        <div class="user-nav__messages">
+                            <h2 class="user-nav__messages-title">Messages</h2>
+                            <div class="user-nav__message user-nav__message-current">
+                                <div class="user-nav__message-photo">
+                                    <img src="./img/user-5.jpg" alt="Photo 5" class="user-nav__message-photo--img">
+                                </div>
+                                <div class="user-nav__message-chat">
+                                    <p class="user-nav__message-chat--name">
+                                        Carlos Martinez
+                                    </p>
+                                    <p class="user-nav__message-chat--message">
+                                        Lorem ipsum dolor sit ...
+                                    </p>
+                                </div>
+                                <div class="user-nav__message-date">
+                                    <p class="user-nav__message-date--hour">
+                                        2:04 p.m
+                                    </p>
+                                    <p class="user-nav__message-date--times">
+                                        Jun 4, 2022
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="user-nav__message">
+                                <div class="user-nav__message-photo">
+                                    <img src="./img/user-3.jpg" alt="Photo 3" class="user-nav__message-photo--img">
+                                </div>
+                                <div class="user-nav__message-chat">
+                                    <p class="user-nav__message-chat--name">
+                                        Mike Waltz
+                                    </p>
+                                    <p class="user-nav__message-chat--message">
+                                        Lorem ipsum dolor sit ...
+                                    </p>
+                                </div>
+                                <div class="user-nav__message-date">
+                                    <p class="user-nav__message-date--hour">
+                                        12:15 p.m
+                                    </p>
+                                    <p class="user-nav__message-date--times">
+                                        Oct 8, 2022
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="user-nav__message">
+                                <div class="user-nav__message-photo">
+                                    <img src="./img/user-2.jpg" alt="Photo 2" class="user-nav__message-photo--img">
+                                </div>
+                                <div class="user-nav__message-chat">
+                                    <p class="user-nav__message-chat--name">
+                                        Jessica Natou
+                                    </p>
+                                    <p class="user-nav__message-chat--message">
+                                        Lorem ipsum dolor sit ...
+                                    </p>
+                                </div>
+                                <div class="user-nav__message-date">
+                                    <p class="user-nav__message-date--hour">
+                                        5:53 p.m
+                                    </p>
+                                    <p class="user-nav__message-date--times">
+                                        Oct 1, 2022
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="user-nav__message">
+                                <div class="user-nav__message-photo">
+                                    <img src="./img/user-4.jpg" alt="Photo 4" class="user-nav__message-photo--img">
+                                </div>
+                                <div class="user-nav__message-chat">
+                                    <p class="user-nav__message-chat--name">
+                                        John Briefcase
+                                    </p>
+                                    <p class="user-nav__message-chat--message">
+                                        Lorem ipsum dolor sit ...
+                                    </p>
+                                </div>
+                                <div class="user-nav__message-date">
+                                    <p class="user-nav__message-date--hour">
+                                        2:36 p.m
+                                    </p>
+                                    <p class="user-nav__message-date--times">
+                                        Sept 14, 2022
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="user-nav__message">
+                                <div class="user-nav__message-photo">
+                                    <img src="./img/user-3.jpg" alt="Photo 3" class="user-nav__message-photo--img">
+                                </div>
+                                <div class="user-nav__message-chat">
+                                    <p class="user-nav__message-chat--name">
+                                        James Briefcase
+                                    </p>
+                                    <p class="user-nav__message-chat--message">
+                                        Lorem ipsum dolor sit ...
+                                    </p>
+                                </div>
+                                <div class="user-nav__message-date">
+                                    <p class="user-nav__message-date--hour">
+                                        6:30 a.m
+                                    </p>
+                                    <p class="user-nav__message-date--times">
+                                        Feb 4, 2022
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="user-nav__message">
+                                <div class="user-nav__message-photo">
+                                    <img src="./img/user-6.jpg" alt="Photo 6" class="user-nav__message-photo--img">
+                                </div>
+                                <div class="user-nav__message-chat">
+                                    <p class="user-nav__message-chat--name">
+                                        Jude Conors
+                                    </p>
+                                    <p class="user-nav__message-chat--message">
+                                        Lorem ipsum dolor sit ...
+                                    </p>
+                                </div>
+                                <div class="user-nav__message-date">
+                                    <p class="user-nav__message-date--hour">
+                                        1:04 p.m
+                                    </p>
+                                    <p class="user-nav__message-date--times">
+                                        Jun 16, 2022
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="./img/user.jpg" alt="user photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Jonas</span>
+                        <div class="user-nav__user-settings">
+                            <a href="#" class="user-nav__user-setting">   
+                                <span>&gt;</span> Account
+                            </a>
+                            <a href="#" class="user-nav__user-setting">
+                                <span>&gt;</span> My Bookings
+                            </a>
+                            <a href="#" class="user-nav__user-setting">
+                                <span>&gt;</span> My Reviews
+                            </a>
+                            <a href="#" class="user-nav__user-setting">
+                                <span>&gt;</span> Connections
+                            </a>
+                            <a href="#" class="user-nav__user-setting">
+                                <span>&gt;</span> Settings
+                            </a>
+                            <a href="#" class="user-nav__user-setting">
+                                <span>&gt;</span> Support
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-home"></use>
+                                </svg>
+                                <span>Hotel</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-airplane"></use>
+                                </svg>
+                                <span>Flight</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-key"></use>
+                                </svg>
+                                <span>Car rental</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="./img/symbol-defs.svg#icon-map2"></use>
+                                </svg>
+                                <span>Tours</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="legal">
+                        &copy; 2022 by trillo. All rights reserved.
+                    </div>
+                </nav>
+                <main class="hotel-view">
+                    <div class="gallery">
+                        <figure class="gallery__item">
+                            <img src="./img/hotel-1.jpg" alt="Photo of hotel 1" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="./img/hotel-2.jpg" alt="Photo of hotel 2" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="./img/hotel-3.jpg" alt="Photo of hotel 3" class="gallery__photo">
+                        </figure>
+                    </div>
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            Hotel Las Palmas
+                        </h1>
+                        <div class="overview__stars">
+                            <svg class="overview__icon-star">
+                                <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="./img/symbol-defs.svg#icon-star-full"></use>
+                            </svg>
+                        </div>
+                        <div class="overview__location">
+                            <svg class="overview__icon-location">
+                                <use xlink:href="./img/symbol-defs.svg#icon-location"></use>
+                            </svg>
+                            <button class="btn-inline">Albufeira, Portugal</button>
+                        </div>
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">9.5</div>
+                            <div class="overview__rating-count">429 votes</div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="description">
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+                            </p>
+                            <p class="paragraph">
+                                Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+                            </p>
+                            <ul class="list">
+                                <li class="list__item">Close to the back</li>
+                                <li class="list__item">Breakfast included</li>
+                                <li class="list__item">Free airport shuttle</li>
+                                <li class="list__item">Free wifi in al rows</li>
+                                <li class="list__item">Air conditioning and heating</li>
+                                <li class="list__item">Pets allowed</li>
+                                <li class="list__item">We speak all lenguages</li>
+                                <li class="list__item">Perfect for families</li>
+                            </ul>
+                            <div class="recommend">
+                                <p class="recommend__count">
+                                    Lucy and 3 other friends recommend this hotel.
+                                </p>
+                                <div class="recommend__friends">
+                                    <img src="./img/user-1.jpg" alt="Friend 1" class="recommend__photo">
+                                    <img src="./img/user-2.jpg" alt="Friend 2" class="recommend__photo">
+                                    <img src="./img/user-3.jpg" alt="Friend 3" class="recommend__photo">
+                                    <img src="./img/user-4.jpg" alt="Friend 4" class="recommend__photo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-reviews">
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro excepturi nulla illum esse quibusdam libero. Nobis, vel unde deserunt atque, repudiandae obcaecati quibusdam quo quod nesciunt debitis optio excepturi? Molestias?
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="./img/user-1.jpg" alt="User 1" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Nick Smith</p>
+                                        <p class="review__user-date">Jun 23rd, 2022</p>
+                                    </div>
+                                    <div class="review__rating">7.8</div>
+                                </figcaption>
+                            </figure>
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores id accusantium provident. Saepe eum beatae rerum perferendis soluta aperiam velit ad placeat porro, eveniet earum quibusdam illo architecto expedita repudiandae.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="./img/user-2.jpg" alt="User 2" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Mary Thomas</p>
+                                        <p class="review__user-date">Sept 13th, 2022</p>
+                                    </div>
+                                    <div class="review__rating">9.3</div>
+                                </figcaption>
+                            </figure>
+                            <button class="btn-inline">Snow all <span>&rarr;</span></button>
+                        </div>
+                    </div>
+
+                    <div class="cta">
+                        <h2 class="cta__book-now">
+                            Good news! We have 4 free roms for your selected dates!
+                        </h2>
+                        <button class="btn">
+                            <span class="btn__visible">
+                                Book now
+                            </span>
+                            <span class="btn__hidden">
+                                Only 4 rooms left
+                            </span>
+                        </button>
+                    </div>
+
+                </main>
+            </div>
+        </div>
     </body>
 </html>

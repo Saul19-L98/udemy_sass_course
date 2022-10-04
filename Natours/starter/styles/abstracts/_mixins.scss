@@ -1,0 +1,47 @@
+@mixin clearFix {
+    &::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin centerHorizontalVertical {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@mixin centerHorizontalVerticalFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+//MEDIA QUERY MANAGER
+/*
+0 - 600px;          Phone
+600 - 900px;        Tablet portrait
+900 - 1200px;       Tablet landscape
+[1200 - 1800px]     is where our normal styles aply
+1800px + ...;       Big desktop      
+*/
+
+//ORDER: Base + typography > general layout + grid > page layout > components
+
+//The "em = 16px" here are depent of the browser font size root, not of our html rook.
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {@media only screen and (max-width: 37.5em) {          //600px
+        @content
+    }};
+    @if $breakpoint == tab-port {@media only screen and (max-width: 56.25em) {       //900px
+        @content
+    }};
+    @if $breakpoint == tab-land {@media only screen and (max-width: 75em) {       //1200px
+        @content
+    }};
+    @if $breakpoint == big-desktop {@media only screen and (min-width: 112.5em) {    //1800px
+        @content
+    }};
+}
